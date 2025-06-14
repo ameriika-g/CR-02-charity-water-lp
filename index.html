@@ -1,47 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We're Charity:Water!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --yellow: #FFC907;
+      --blue: #003366;
+      --dark: #1A1A1A;
+      --light: #F1F1F1;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: 'Proxima Nova', sans-serif;
+      margin: 0;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background-color: #F1F1F1;
+      color: var(--dark);
+      padding: 1rem;
+      text-align: left;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .cta-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      background-color: #003366;
+      color: #F1F1F1;
+      padding: 2rem 2rem;
+      min-height: 90vh;
+      width: 100vw;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cta-section {
+      flex: 1;
+      padding: 5rem;
+      text-align: right;
+    }
+
+    .cta-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: #F1F1F1;
+    }
+
+    .cta-section p {
+      max-width: 600px;
+      margin: 0rem;
+      font-size: 1.5rem;
+      color: #F1F1F1;
+    }
+
+    .cta-button {
+      background-color: var(--yellow);
+      color: black;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Playfair Display', serif;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      display: inline-block;
+      margin: 0.5rem;
+    }
+
+    .cta-button:hover {
+      background-color: #FFC907;
+    }
+
+    .image-placeholder {
+      flex: 1;
+      height: auto;
+      display: flex;
+      align-items: right;
+      justify-content: right;
+      padding: rem;
+    }
+
+    .image-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0px;
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+  </style>
 </head>
+
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <header>
+    <!-- Logo image added to the header -->
+    <img src=img/charitywater_logo_horizontal.png alt="Charity Water Logo">
+    <!-- You can add a heading or navigation here if needed -->
+  </header>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <section class="cta-wrapper">
+    <div class="cta-section">
+      <h2>Transforming lives through clean water, one jerry can at a time</h2>
+      <p>Clean water fuels health, education, and economies. No matter the amount, your donation helps shape future thriving communities for generations to come.</p>
+      <a href="#" class="cta-button">Sign-up For Our Newsletter</a>
+      <br>
+      <a href="#" class="cta-button">Donate Now</a>
+    </div>
+    <div class="image-placeholder">
+      <img src=img/Rwanda-2018-march-cw-cubbygraham-1088.jpg alt="Clean water impact image">
+    
+  </section>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <footer>
+    &copy; 2025 Charity: Water All rights reserved.
+  </footer>
 </body>
+
 </html>
+
